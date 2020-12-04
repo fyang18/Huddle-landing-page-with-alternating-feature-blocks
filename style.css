@@ -1,0 +1,605 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+
+### Neutral
+
+- Very Pale Cyan: hsl(193, 100%, 96%)
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Grayish Blue: hsl(208, 11%, 55%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 600
+
+### Body, Call-to-actions
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: hsl(192, 100%, 9%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+/*
+==========================================================
+                        Header
+=========================================================
+*/
+
+.header {
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    padding: 43px 82px 146px;
+}
+
+.headerMenu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerMenu img {
+    height: 30px;
+    max-width: 200px;
+}
+
+.menuButton {
+    background-color: #ffffff;
+    border:none;
+    border-radius: 35px;
+    color: hsl(192, 100%, 9%);
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    padding: 14px 65px;
+}
+
+.menuButton:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.innerHeader {
+    align-items: center;
+    display: flex;
+    margin-top: 71px;
+}
+
+.innerHeader img {
+    height: auto;
+    max-width: 680px;
+}
+.left {
+    margin-right: 85px;
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+.left h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.left p {
+    color: #244044;
+    margin-top: 54px;
+}
+
+.innerHeaderButton {
+    background-color: hsl(322, 100%, 66%);
+    border:none;
+    border-radius: 35px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 39px;
+    padding: 18px 70px;
+}
+
+.innerHeaderButton:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+
+/*
+==========================================================
+                        Main
+=========================================================
+*/
+
+.main {
+    margin: 160px 104px 0;
+}
+
+.innerMain img {
+    height: 336px;
+    width: 408px;
+}
+
+.innerMain p {
+    color: hsl(208, 11%, 55%);
+    margin-top: 34px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+
+}
+
+.flowing {
+    margin: 40px 0 40px;
+}
+
+.growLeft, .growRight, .flowingLeft , .flowingRight, .usersLeft, .usersRight {
+    width: 50%;
+}
+
+.growRight img, .flowingRight, .usersRight img {
+    float: right;
+    padding-right: 39px;
+}
+
+.growLeft, .flowingLeft, .usersLeft {
+    padding-left: 121px;
+}
+
+.readyToBuild {
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin : auto;
+    height: 280px;
+    max-width: 800px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+    transform: translateY(150px);
+}
+
+.readyToBuildButton {
+    background-color: hsl(322, 100%, 66%);
+    border:none;
+    border-radius: 35px;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-top: 48px;
+    padding: 25px 101px 25px;
+}
+
+.readyToBuildButton:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+/*
+==========================================================
+                        Footer
+=========================================================
+*/
+
+.footer {
+    background-color: #000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 80px 68px 120px;
+}
+
+.footer img {
+    filter: brightness(0) invert(1);
+}
+
+.contact {
+    max-width: 440px;
+}
+
+#logoFooter {
+    margin-bottom: 50px;
+}
+
+.contact p{
+    margin-left: 19px;
+}
+
+#location {
+    margin-left: 30px;
+}
+
+.phone, .mail, .location {
+    display: flex;
+}
+
+.phone img, .mail img, .location img {
+    height: 25px;
+    width: 25px;
+}
+
+.phone {
+	margin: 36px 0 39px;
+}
+
+.phone a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.phone a:hover {
+    color: hsl(322, 100%, 66%);
+    transition: 0.7s;
+}
+
+.mail a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.mail a:hover {
+    color: hsl(322, 100%, 66%);
+    transition: 0.7s;
+}
+
+.about, .career {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    justify-content: space-around;
+}
+
+.career {
+	height: 148px;
+	margin-top: 84px;
+}
+
+.about {
+    height: 170px;
+    margin-top: 60px;
+}
+
+.about a, .career a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.about a:hover, .career a:hover {
+    color: hsl(322, 100%, 66%);
+    transition: 0.7s;
+}
+
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.socialMedia a:hover {
+    color: hsl(322, 100%, 66%);
+    transition: 0.7s;
+}
+
+.fab {
+    height: 31px;
+    width: 31px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.fab:hover {
+    border-color: hsl(322, 100%, 66%);
+    transition: 0.7s;
+}
+
+.copyright {
+    font-size: 10px;
+    transform: translateY(35px);
+
+}
+
+.frontendFooter {
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.frontendFooter a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.frontendFooter a:hover {
+    color: hsl(322, 100%, 66%);
+    transition: 0.7s;
+}
+
+/*
+==========================================================
+                        Media Queries
+=========================================================
+*/
+
+
+@media screen and (min-width: 350px) and (max-width: 749px) {
+        /* ============ HEADER ============ */
+        .header {
+            padding: 48px 30px 74px;
+        }
+
+        .headerMenu {
+            align-items: center;
+        }
+
+        .menuButton {
+            padding: 14px 25px;
+        }
+
+        .innerHeader {
+            display: block;
+            margin-top: 200px;
+        }
+        
+        .innerHeaderButton {
+            margin-top: 25px;
+            padding: 15px 50px 15px;
+        }
+        .innerHeader img {
+            height: auto;
+            max-width: 267px;
+            margin-top: 76px;
+        }
+    
+        .left {
+            margin: 0;
+            margin: auto;
+            text-align: center;
+            width: 80%;
+        }
+    
+        .left p {
+            margin-top: 80px;
+        }
+    
+        .right {
+            margin: auto;
+            width: 85%;
+        }
+    
+        /* ============ Main ============ */
+    
+        .main {
+            margin: 118px 40px 0;
+        }
+    
+        .innerMain img {
+            height: 300px;
+            width: 267px;
+        }
+    
+        .item {
+            flex-direction: column-reverse;
+            height: 600px;
+        }
+    
+        .growLeft, .growRight, .flowingLeft, .flowingRight, .usersLeft, .usersRight {
+            width: 85%;
+            margin: auto;
+            padding:0;
+            text-align: center;
+        }
+    
+        .growRight img, .flowingRight, .usersRight img {
+            float: none;
+            padding-right: 0;
+        }
+    
+        .flowing {
+            flex-direction: column;
+        }
+    
+        /* ============ Ready To Build ============ */
+        .readyToBuild {
+            height: 220px;
+            max-width: 300px;
+            transform: translateY(110px);
+            text-align: center;
+        }
+
+        .readyToBuildButton {
+            margin-top: 25px;
+            padding: 15px 50px 15px;
+        }
+        
+        /* ============ Footer ============ */
+    
+        .footer {
+            display: block;
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    
+        .about {
+            margin-top: 141px;
+        }
+    
+        .about, .career {
+            align-items: flex-start;
+        }
+    
+        .career {
+            margin-top: 0;
+        }
+    
+        .socialMedia {
+            justify-content: center;
+            align-items: center;
+            margin-top: 120px;
+        }
+    
+        .icons a:nth-child(2) {
+            margin: 0 26px; 
+        }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1200px) {
+
+    /* ============ HEADER ============ */
+    .header {
+        padding: 48px 30px 74px;
+    }
+    .innerHeader {
+        display: block;
+        margin-top: 200px;
+    }
+
+    .innerHeader img {
+        height: auto;
+        max-width: 592px;
+        margin-top: 76px;
+    }
+
+    .left {
+        margin: 0;
+        margin: auto;
+        text-align: center;
+        width: 80%;
+    }
+
+    .left p {
+        margin-top: 80px;
+    }
+
+    .right {
+        margin: auto;
+        width: 85%;
+    }
+
+    /* ============ Main ============ */
+
+    .main {
+        margin: 118px 40px 0;
+    }
+
+    .innerMain img {
+        height: 390px;
+        width: 480px;
+    }
+
+    .item {
+        flex-direction: column-reverse;
+        height: 976px;
+    }
+
+    .growLeft, .growRight, .flowingLeft, .flowingRight, .usersLeft, .usersRight {
+        width: 85%;
+        margin: auto;
+        padding:0;
+        text-align: center;
+    }
+
+    .growRight img, .flowingRight, .usersRight img {
+        float: none;
+        padding-right: 0;
+        margin-left: 45px;
+    }
+
+    .flowing {
+        flex-direction: column;
+    }
+
+    /* ============ Ready To Build ============ */
+    .readyToBuild {
+        height: 352px;
+        max-width: 704px;
+        transform: translateY(175px);
+    }
+    
+    /* ============ Footer ============ */
+
+    .footer {
+        display: block;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .about {
+        margin-top: 141px;
+    }
+
+    .about, .career {
+        align-items: flex-start;
+    }
+
+    .career {
+        margin-top: 0;
+    }
+
+    .socialMedia {
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+    }
+
+    .icons a:nth-child(2) {
+        margin: 0 26px; 
+    }
+}
