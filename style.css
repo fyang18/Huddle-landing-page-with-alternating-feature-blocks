@@ -337,6 +337,10 @@ body {
     transition: 0.7s;
 }
 
+.icons {
+    margin-top: 72px;
+}
+
 .fab {
     height: 31px;
     width: 31px;
@@ -495,10 +499,6 @@ body {
             margin-top: 120px;
         }
         
-        .icons {
-            margin-top: 72px;
-        }
-
         .icons a:nth-child(2) {
             margin: 0 26px; 
         }
